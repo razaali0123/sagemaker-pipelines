@@ -3,3 +3,8 @@
 .config/
 model/
 .jupyter/
+.aws/
+.ipython/
+.ipynb_checkpoints
+.yarnrc
+.sagemaker-jumpstart-tasks-status.json
