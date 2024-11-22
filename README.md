@@ -23,36 +23,21 @@ When the model's approval status is changed to "approved," an event is triggered
 
 ![Model Registry Overview](ss/model_registry.png)
 
+A user has the option to analyze the performance of a version of the model and then approve it for deployment.
+
+![Change Status Screenshot](ss/change_status.png)
+
 ### Event Handling
 
-Utilizes AWS EventBridge to respond to model package state changes.
+Utilizes AWS EventBridge to respond to model package state changes (Pending --> Approved).
 
 ![EventBridge Configuration](ss/event_bridge.png)
 
 ### Lambda Functions
 
-Leverage AWS Lambda for event-driven computations.
+Leverage AWS Lambda for deployment of the approved model.
 
 ![Lambda Function Overview](ss/lambda.png)
 
-## Workflow Execution
 
-The pipeline execution flow is illustrated below:
 
-![Pipeline Execution Flow](ss/execution.png)
-
-## Setup Instructions
-
-1. Clone the repository.
-2. Set up AWS credentials.
-3. Install required dependencies.
-4. Configure SageMaker settings as needed.
-5. Run the pipeline using your preferred method.
-
-## Contributing
-
-Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License.
